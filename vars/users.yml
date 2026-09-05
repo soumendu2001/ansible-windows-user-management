@@ -8,7 +8,7 @@ users:
       - Users
       - Remote Desktop Users
     password_never_expires: true
-    state: absent
+    state: create
 
   
   - name: appuser2
@@ -17,17 +17,9 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: absent
+    state: disabled
 
   
   - name: appuser3
     state: absent
 
-  - name: appuser4
-    password: "Password@123"
-    description: "Service Performance and reporting"
-    groups:
-      - Users
-      - Remote Desktop Users
-    password_never_expires: true
-    state: absent

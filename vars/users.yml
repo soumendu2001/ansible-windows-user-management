@@ -1,0 +1,33 @@
+---
+users:
+  
+  - name: appuser1
+    password: "Password@123"
+    description: "Application Service Account"
+    groups:
+      - Users
+      - Remote Desktop Users
+    password_never_expires: true
+    state: absent
+
+  
+  - name: appuser2
+    password: "Password@123"
+    description: "Finance Application Account"
+    groups:
+      - Users
+    password_never_expires: true
+    state: absent
+
+  
+  - name: appuser3
+    state: absent
+
+  - name: appuser4
+    password: "Password@123"
+    description: "Service Performance and reporting"
+    groups:
+      - Users
+      - Remote Desktop Users
+    password_never_expires: true
+    state: absent

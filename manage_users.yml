@@ -1,0 +1,40 @@
+---
+- name: Windows User Lifecycle Management
+  hosts: windows
+  gather_facts: false
+
+  vars_files:
+    - vars/users.yml
+
+  tasks:
+
+    - name: Create or Update Users
+      ansible.windows.win_user:
+        name: "{{ item.name }}"
+        password: "{{ item.password | default(omit) }}"
+        description: "{{ item.description | default(omit) }}"
+        groups: "{{ item.groups | default(omit) }}"
+        password_never_expires: "{{ item.password_never_expires | default(true) }}"
+        state: present
+        account_disabled: false
+      loop: "{{ users }}"
+      when: item.state == "present"
+
+    - name: Disable Users
+      ansible.windows.win_user:
+        name: "{{ item.name }}"
+        account_disabled: true
+      loop: "{{ users }}"
+      when: item.state == "disabled"
+
+    - name: Delete Users
+      ansible.windows.win_user:
+        name: "{{ item.name }}"
+        state: absent
+      loop: "{{ users }}"
+      when: item.state == "absent"
+
+    - name: Display Summary
+      debug:
+        msg: "Processed {{ item.name }} with state {{ item.state }}"
+      loop: "{{ users }}"

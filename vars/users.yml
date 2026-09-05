@@ -8,7 +8,7 @@ users:
       - Users
       - Remote Desktop Users
     password_never_expires: true
-    state: create
+    state: present
 
   
   - name: appuser2

@@ -17,7 +17,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: disabled
+    state: present
 
   
   - name: appuser3

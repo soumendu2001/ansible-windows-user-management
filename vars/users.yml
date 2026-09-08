@@ -7,7 +7,7 @@ users:
       - Users
       - Remote Desktop Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser2
     password: "Password@123"
@@ -15,10 +15,10 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser3
-    state: present
+    state: absent
 
   - name: appuser4
     password: "Password@123"
@@ -26,7 +26,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser5
     password: "Password@123"
@@ -34,7 +34,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser6
     password: "Password@123"
@@ -42,7 +42,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser7
     password: "Password@123"
@@ -58,7 +58,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser9
     password: "Password@123"
@@ -66,7 +66,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser10
     password: "Password@123"
@@ -74,7 +74,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser11
     password: "Password@123"

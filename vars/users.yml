@@ -1,3 +1,44 @@
+users:
+  - name: appuser1
+    password: "Password@123"
+    description: "Application User 1"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser2
+    password: "Password@123"
+    description: "Application User 2"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser3
+    password: "Password@123"
+    description: "Application User 3"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser4
+    password: "Password@123"
+    description: "Application User 4"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser5
+    password: "Password@123"
+    description: "Application User 5"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
   - name: appuser21
     password: "Password@123"
     description: "Application User 21"
@@ -22,18 +63,3 @@
     password_never_expires: true
     state: present
 
-  - name: appuser24
-    password: "Password@123"
-    description: "Application User 23"
-    groups:
-      - Users
-    password_never_expires: true
-    state: present
-
-  - name: appuser25
-    password: "Password@123"
-    description: "Application User 23"
-    groups:
-      - Users
-    password_never_expires: true
-    state: present

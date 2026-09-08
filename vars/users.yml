@@ -1,10 +1,39 @@
----
-users:
-{% for i in range(1,121) %}
-  - name: appuser{{ i }}
+  - name: appuser21
     password: "Password@123"
-    description: "Application User {{ i }}"
+    description: "Application User 21"
     groups:
       - Users
     password_never_expires: true
-    
+    state: present
+
+  - name: appuser22
+    password: "Password@123"
+    description: "Application User 22"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser23
+    password: "Password@123"
+    description: "Application User 23"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser24
+    password: "Password@123"
+    description: "Application User 23"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser25
+    password: "Password@123"
+    description: "Application User 23"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present

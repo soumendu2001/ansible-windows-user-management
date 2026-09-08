@@ -63,3 +63,27 @@ users:
     password_never_expires: true
     state: present
 
+  - name: appuser24
+    password: "Password@123"
+    description: "Application User 23"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser25
+    password: "Password@123"
+    description: "Application User 23"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+
+  - name: appuser26
+    password: "Password@123"
+    description: "Application User 23"
+    groups:
+      - Users
+    password_never_expires: true
+    state: present
+

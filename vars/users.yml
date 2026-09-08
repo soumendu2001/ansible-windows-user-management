@@ -147,10 +147,11 @@ users:
       - Users
     password_never_expires: true
     state: present
-
   - name: appuser20
     password: "Password@123"
     description: "Application User 20"
     groups:
+      - Users
+    password_never_expires: true
     state: present
   

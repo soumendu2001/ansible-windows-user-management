@@ -5,7 +5,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser2
     password: "Password@123"
@@ -13,7 +13,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser3
     password: "Password@123"
@@ -21,7 +21,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser4
     password: "Password@123"
@@ -29,7 +29,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser5
     password: "Password@123"
@@ -37,7 +37,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser21
     password: "Password@123"
@@ -45,7 +45,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser22
     password: "Password@123"
@@ -53,7 +53,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser23
     password: "Password@123"
@@ -61,7 +61,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser24
     password: "Password@123"
@@ -69,7 +69,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser25
     password: "Password@123"
@@ -77,7 +77,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser26
     password: "Password@123"
@@ -85,7 +85,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser27
     password: "Password@123"
@@ -93,7 +93,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser28
     password: "Password@123"
@@ -101,7 +101,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser29
     password: "Password@123"
@@ -109,7 +109,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser30
     password: "Password@123"
@@ -117,7 +117,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser31
     password: "Password@123"
@@ -125,7 +125,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser32
     password: "Password@123"
@@ -133,7 +133,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser33
     password: "Password@123"
@@ -141,7 +141,7 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: absent
 
   - name: appuser34
     password: "Password@123"
@@ -149,7 +149,5 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
-
-    
+    state: absent
 

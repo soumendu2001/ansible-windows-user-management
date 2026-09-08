@@ -152,4 +152,5 @@ users:
     password: "Password@123"
     description: "Application User 20"
     groups:
+    state: present
   

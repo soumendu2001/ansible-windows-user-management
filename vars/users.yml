@@ -149,4 +149,4 @@ users:
     groups:
       - Users
     password_never_expires: true
-    state: present
+    state: disabled

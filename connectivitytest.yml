@@ -1,5 +1,9 @@
+---
 - name: Verify Windows Connectivity
   hosts: windows
   gather_facts: false
+
   tasks:
-    - ansible.windows.win_ping:
+    - name: Verify WinRM connection
+      ansible.windows.win_ping:
+...

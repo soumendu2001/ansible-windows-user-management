@@ -1,0 +1,4 @@
+- name: Verify Windows Connectivity
+  hosts: windows
+  tasks:
+    - ansible.windows.win_ping:

@@ -9,5 +9,5 @@
       register: ping_result
     - name: Display ping result
       debug:
-      var: ping_result.ping
+        var: ping_result.ping
 ...

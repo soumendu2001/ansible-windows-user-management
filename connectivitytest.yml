@@ -6,4 +6,8 @@
   tasks:
     - name: Verify WinRM connection
       ansible.windows.win_ping:
+      register: ping_result
+    - name: Display ping result
+      debug:
+      var: ping_result.ping
 ...

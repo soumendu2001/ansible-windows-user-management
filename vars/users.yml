@@ -145,8 +145,8 @@ users:
 
   - name: appuser34
     password: "Password@123"
-    description: "Application User 23"
+    description: "Application User 34"
     groups:
       - Users
     password_never_expires: true
-    state: disabled
+    state: absent
